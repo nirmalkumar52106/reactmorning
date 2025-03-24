@@ -1,0 +1,115 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css");
+.main-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  padding: 12px;
+  color: white;
+  position: sticky;
+  top: 0;
+}
+
+ .main-header ul li{
+  padding: 14px 50px;
+
+ 
+  margin: 10px 7px;
+  display: inline-block;
+  font-weight: bold;
+}
+.active{background-color: green;padding: 14px 0px;color: white;}
+
+.btn-wrapper button{
+  padding: 10px 30px;
+  margin: 10px;
+}
+
+.blog-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: black;
+  margin: 40px auto;
+  width: 85%;
+  padding: 35px;
+  border-radius: 14px;
+}
+
+.blog-container .blog{
+  width: 19%;
+  padding: 15px;
+  margin: 12px;
+  background-color: rgb(62, 60, 60);
+  color: white;
+  border-radius: 8px;
+}
+.blog-container .blog button{
+  padding: 12px 45px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+}
+
+table button i{
+  padding: 10px 25px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+table .save{
+  border: none;
+  background-color: transparent;
+  text-align: center;
+}
+table td{text-align: center;}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fafafa;
+}
+.item img {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+.item-details {
+  flex-grow: 1;
+}
+.item-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+.item-description {
+  font-size: 19px;
+  color: #555;
+  margin: 7px;
+}
+.remove-btn {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.remove-btn:hover {
+  background: #cc0000;
+}

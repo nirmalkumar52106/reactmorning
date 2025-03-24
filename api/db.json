@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "id": "123d",
+      "namee": "hjfhfh",
+      "email": "n@gmail.com",
+      "dob": "444"
+    },
+    {
+      "id": "143d",
+      "namee": "hjfhfh2",
+      "email": "n@gmail2.com",
+      "dob": "4244"
+    }
+  ],
+  "cart": [],
+  "saveditems": [
+    {
+      "id": "123d",
+      "namee": "hjfhfh",
+      "email": "n@gmail.com",
+      "dob": "444"
+    }
+  ]
+}
