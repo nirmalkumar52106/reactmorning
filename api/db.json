@@ -1,25 +1,19 @@
 {
   "users": [
     {
-      "id": "123d",
-      "namee": "hjfhfh",
-      "email": "n@gmail.com",
-      "dob": "444"
-    },
-    {
-      "id": "143d",
-      "namee": "hjfhfh2",
-      "email": "n@gmail2.com",
-      "dob": "4244"
+      "id": "ccdc",
+      "namee": "Sahjad khana",
+      "email": "mohitjaat093@gmail.com",
+      "dob": "2200-10-10"
     }
   ],
   "cart": [],
   "saveditems": [
     {
-      "id": "123d",
-      "namee": "hjfhfh",
-      "email": "n@gmail.com",
-      "dob": "444"
+      "id": "ccdc",
+      "namee": "Sahjad khana",
+      "email": "mohitjaat093@gmail.com",
+      "dob": "2200-10-10"
     }
   ]
 }

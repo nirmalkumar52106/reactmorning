@@ -1,15 +1,21 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Header(){
 
     const menus = [
         {id : 1 , menuname : "Home" , path : "home"},
-        {id: 2 , menuname : "About" , path : "about"},
-        {id: 4 , menuname : "Saved Enquiry" , path : "savedenquiry"},
-        {id: 3 , menuname : "Logout" , path : ""},
-
+        {id: 2 , menuname : "Add Enquiry" , path : "addenquiry"},
+        {id: 3 , menuname : "Courses" , path : "Courses"},
+        {id: 3 , menuname : "Blog" , path : "blog"},
     ] 
+
+    function Logout(){
+        localStorage.removeItem("userprivatekey")
+        setTimeout(() => {
+            window.location.reload()
+        }, 500);
+    }
 
     return(
         <>
@@ -25,6 +31,16 @@ function Header(){
                     )
                 })
             }
+            <button onClick={Logout} style={{
+                padding :"13px 45px",
+                backgroundColor : "red",
+                color:"white",
+                fontWeight : "bold",
+                border : "none",
+                borderRadius : "6px",
+                cursor : "pointer",
+                margin : "0px 10px"
+            }}>Logout</button>
             </ul>
         </div>
         

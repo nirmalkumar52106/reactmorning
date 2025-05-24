@@ -1,27 +1,31 @@
-
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Login } from "./pages/login";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import { Home } from "./pages/home";
-import { About } from "./pages/about";
 import { Errorpage } from "./pages/404page";
-import { SavedEnquiry } from "./components/savedEmquiry";
+import { EnquiryForm } from "./components/addenquiry";
+import { LoginForm } from "./pages/EnquiryLogin";
+import { EnquiryDetail } from "./pages/enquirydetail";
+import { Blog } from "./components/blog/blog";
+import { AddCourse } from "./components/courses/adddcourse";
+import WebEnquiryTable from "./components/websiteenq";
 
-function App(){
-  return(
+function App() {
+  return (
     <>
-
-    <BrowserRouter>
-    <Routes>
-      <Route path="*" element={<Errorpage/>}/>
-      <Route path="/" element={<Login/>}/>
-      <Route path="/home" element={<Home/>}/>
-      <Route path="/about" element={<About/>}/>
-      <Route path="/savedenquiry" element={<SavedEnquiry/>}/>
-    </Routes>
-    </BrowserRouter>
+      <HashRouter>
+        <Routes>
+          <Route path="*" element={<Errorpage />} />
+          <Route path="/" element={<LoginForm />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/addenquiry" element={<EnquiryForm />} />
+          <Route path="/enqdetail" element={<EnquiryDetail />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/Courses" element={<AddCourse />} />
+          <Route path="/webenq" element={<WebEnquiryTable/>} />
+        </Routes>
+      </HashRouter>
     </>
-  )
+  );
 }
 
-export{App}
+export { App };
