@@ -1,11 +1,13 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Allcourse } from "./courcelist";
-import { Header } from "../header";
 import { SidebarHeader } from "../sidebarheader";
+import { useNavigate } from "react-router-dom";
 
 
 function AddCourse() {
 
+
+  const tokennn = localStorage.getItem("token")
 
 
   const [show, setshow] = useState(true);
@@ -22,7 +24,7 @@ function AddCourse() {
   const [form, setForm] = useState({
     cardimage: "",
     coursecategory: "",
-    courcedesc: "",
+    courcedesc: "", 
     courcecreatedby: "",
     courceprice: "",
     courseoverview: "",
@@ -86,7 +88,10 @@ function AddCourse() {
     try {
       const res = await fetch("https://dgrnode.vercel.app/addcourse", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { 
+          "Content-Type": "application/json",
+          "Authorization": `Bearer ${tokennn}`
+         },
         body: JSON.stringify(form),
       });
       const data = await res.json();
@@ -96,6 +101,16 @@ function AddCourse() {
       alert("Something went wrong!");
     }
   };
+
+  const goto =  useNavigate()
+
+
+  useEffect(()=>{
+const token = localStorage.getItem("token")
+    if(!token){
+      window.location.replace("/")
+    }
+  },[goto])
 
   return (
     <>

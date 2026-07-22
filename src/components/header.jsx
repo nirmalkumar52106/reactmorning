@@ -7,7 +7,8 @@ function Header(){
         {id : 1 , menuname : "Home" , path : "home"},
         {id: 2 , menuname : "Add Enquiry" , path : "addenquiry"},
         {id: 3 , menuname : "Courses" , path : "Courses"},
-        {id: 3 , menuname : "Blog" , path : "blog"},
+        {id: 4 , menuname : "Blog" , path : "blog"},
+        {id: 5 , menuname : "StudentPortal" , path : "studentportal"},
     ] 
 
     function Logout(){
